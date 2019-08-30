@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="car"
+            type="mdev.k016_databindinginrecyclerview.ModelItem" />
+    </data>
+    <LinearLayout
+        android:id="@+id/lnMainItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@{car.name}"/>
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimary"
+            android:text="@{car.price}"/>
+    </LinearLayout>
+</layout>
